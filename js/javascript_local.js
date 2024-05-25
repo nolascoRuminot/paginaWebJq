@@ -18,7 +18,7 @@ $(document).ready(function() {
           var valorUF = data.serie[0].valor;
           localStorage.setItem('valorUF', valorUF);
       })
-      .catch(error => console.error('Error al obtener el valor de la UF:', error));
+      .catch(error => console.error('Error al obtener el valor de la UF: ', error));
 
   var valorUF = localStorage.getItem('valorUF');
 
@@ -39,7 +39,7 @@ $(document).ready(function() {
       var texto = $(this).val();
       var regex = /^[a-zA-Z\s]*$/;
       if (!regex.test(texto)) {
-          this.setCustomValidity('Informacion incorrecta.');
+          this.setCustomValidity('Información incorrecta.');
       } else {
           this.setCustomValidity('');
       }
@@ -49,7 +49,7 @@ $(document).ready(function() {
       var texto = $(this).val();
       var regex = /^[a-zA-Z\s]*$/;
       if (!regex.test(texto)) {
-          this.setCustomValidity('Informacion incorrecta.');
+          this.setCustomValidity('Información incorrecta.');
       } else {
           this.setCustomValidity('');
       }
